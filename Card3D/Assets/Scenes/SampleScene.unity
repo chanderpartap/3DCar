@@ -296,6 +296,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9074037152171270074, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
+        type: 3}
+      propertyPath: cameraRotateMax
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074037152171270074, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
+        type: 3}
+      propertyPath: cameraRotateMin
+      value: -80
+      objectReference: {fileID: 0}
     - target: {fileID: 9074037153092279155, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -309,7 +319,7 @@ PrefabInstance:
     - target: {fileID: 9074037153092279155, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.3
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 9074037153092279155, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
