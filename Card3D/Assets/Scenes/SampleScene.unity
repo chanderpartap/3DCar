@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 739432550}
   - component: {fileID: 739432549}
   - component: {fileID: 739432548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ PrefabInstance:
     - target: {fileID: 9074037153092279155, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.11
+      value: 28.3
       objectReference: {fileID: 0}
     - target: {fileID: 9074037153092279155, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
@@ -351,10 +351,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9074037153092279156, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
+        type: 3}
+      propertyPath: m_SlopeLimit
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 9074037153092279157, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
         type: 3}
       propertyPath: m_Name
       value: FPS Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074037153509159234, guid: 11c6373b4f2d54e44a96543a22ffd3cf,
+        type: 3}
+      propertyPath: speed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11c6373b4f2d54e44a96543a22ffd3cf, type: 3}
