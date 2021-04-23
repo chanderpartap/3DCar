@@ -17,7 +17,7 @@ public class FirstPersonController : MonoBehaviour
     public float cameraRotateMin;
     [Header("Mouse Smoothing Value")]
     public float mouseSmooth;
-    public float speed;
+   
 
 
     private Camera m_camera;
@@ -27,7 +27,7 @@ public class FirstPersonController : MonoBehaviour
     private float m_mouseY;
     private float m_rotateX;
     private float m_mouseScroll;
-    private Rigidbody rb;
+    //private Rigidbody rb;
 
     Vector3 Vec;
     private void Awake()
@@ -35,7 +35,7 @@ public class FirstPersonController : MonoBehaviour
         sharedInstance = this;
         m_camera = Camera.main;
         m_parent = transform.parent;
-        rb = m_parent.GetComponent<Rigidbody>();
+        //rb = m_parent.GetComponent<Rigidbody>();
         if(m_camera != null)
         {
             m_fieldOfView = m_camera.fieldOfView;
