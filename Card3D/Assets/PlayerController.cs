@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 200;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
+    public CharacterController controller;
+    public float speed = 0.5f;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+            speed = 1f;
+            Debug.Log(speed);
         }
+        else
+        {
+            speed = 0.5f;
+            Debug.Log(speed);
+        }
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x * speed + transform.forward * z * speed;
+
+        controller.Move(move);
     }
 }

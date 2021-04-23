@@ -47,12 +47,6 @@ public class FirstPersonController : MonoBehaviour
     {
         return sharedInstance;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -60,12 +54,6 @@ public class FirstPersonController : MonoBehaviour
         RotatePlayerY();
         CameraRotateX();
         CameraZoom();
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            rb.AddForce(0, 0, 100);
-        }
-        MoveForward();
-
     }
 
     private void MouseInputs()
@@ -81,9 +69,9 @@ public class FirstPersonController : MonoBehaviour
     }
     private void CameraRotateX()
     {
-        m_rotateX += m_mouseY;
+        m_rotateX -= m_mouseY;
         m_rotateX = Mathf.Clamp(m_rotateX, cameraRotateMin, cameraRotateMax);
-        m_camera.transform.localRotation = Quaternion.Euler(-m_rotateX, 0f, 0f);
+        m_camera.transform.localRotation = Quaternion.Euler(m_rotateX, 0f, 0f);
     }
     private void MouseLock()
     {
@@ -117,9 +105,5 @@ public class FirstPersonController : MonoBehaviour
                 }
             }
         }
-    }
-    private void MoveForward()
-    {
-        
     }
 }
