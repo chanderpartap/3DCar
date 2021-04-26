@@ -17,6 +17,8 @@ public class FirstPersonController : MonoBehaviour
     public float cameraRotateMin;
     [Header("Mouse Smoothing Value")]
     public float mouseSmooth;
+
+    //public GameObject target;
    
 
 
@@ -54,6 +56,8 @@ public class FirstPersonController : MonoBehaviour
         RotatePlayerY();
         CameraRotateX();
         CameraZoom();
+        //target.transform.localPosition = Quaternion.Euler(m_camera.transform.position.x, 0, 0);
+        //target.transform.forward = ((m_camera.transform.position - Vector3.up * m_camera.transform.position.y) - target.transform.position).normalized;
     }
 
     private void MouseInputs()
